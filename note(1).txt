@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELearning Complex | Futuristic Tutor</title>
+    <style>
+        :root {
+            --neon-cyan: #00f2ff;
+            --neon-purple: #bc13fe;
+            --bg-dark: #0a0a0a;
+            --card-bg: #161616;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-bottom: 2px solid var(--neon-cyan);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--neon-cyan);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            border-bottom: 1px solid #333;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* Cards Section */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: var(--neon-cyan);
+            margin-top: 0;
+        }
+
+        /* Pricing Table */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: #111;
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: 15px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        .pricing-table th {
+            background: var(--neon-cyan);
+            color: black;
+        }
+
+        /* Buttons */
+        .btn {
+            background: transparent;
+            color: var(--neon-cyan);
+            border: 2px solid var(--neon-cyan);
+            padding: 12px 30px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--neon-cyan);
+            color: black;
+            box-shadow: 0 0 15px var(--neon-cyan);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ELearning Complex</div>
+        <div>
+            <button class="btn" style="font-size: 12px;">Get Free Trial</button>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Your Personal Tutor</h1>
+        <p>Learn Quran & Academic Subjects Online with Expert Tutors</p>
+        <br>
+        <button class="btn">Explore Courses</button>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align:center; color: var(--neon-cyan); margin-bottom: 40px;">Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Learn Quran Online</h3>
+                <p>Give your child the gift of Quranic knowledge. Tajweed, Memorization, and Understanding.</p>
+                <button class="btn">Enroll Now</button>
+            </div>
+            <div class="card">
+                <h3>Academic Subjects</h3>
+                <p>Expert help in Math, Science, and Languages for all grades (Federal Board & International).</p>
+                <button class="btn">Enroll Now</button>
+            </div>
+            <div class="card">
+                <h3>24/7 Support</h3>
+                <p>Classes available according to your timezone. One-on-one personalized attention.</p>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+
+        <h2 style="text-align:center; color: var(--neon-cyan); margin-top: 80px;">Fee Structure</h2>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Classes / Month</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Starter</td>
+                    <td>8</td>
+                    <td>30 Min</td>
+                    <td>$39.00</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>12</td>
+                    <td>30 Min</td>
+                    <td>$55.00</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>20</td>
+                    <td>30 Min</td>
+                    <td>$90.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Copyright 2016-2026 © Elearning Complex | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
